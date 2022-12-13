@@ -19,22 +19,3 @@ navItems.forEach((item) => {
   });
 });
  
-const cards = [
-  {
-  name: 'helloo', 
-  age:21
-}, {
-  name: 'heilloo', 
-  age:21
-},
-{
-  name: 'heliloo', 
-  age:21
-},
-]
-const name = 'he'
-const filterItems = (cards, name) => {
-    return cards.filter(card => 
-    card.name.toLowerCase().indexOf(name.toLowerCase()) !== -1)
-}
-console.log(filterItems(cards, name));
