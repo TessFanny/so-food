@@ -59,6 +59,6 @@ Casser un oeuf et garder le jaune d’oeuf.
 Mélanger le jaune d’oeuf, la crème fraiche et le jus de citron.
 Verser le mélange dans le faitout.
 Laisser mijoter pendant 15 minutes.
-Servir et déguster !", "débutant", 3, 60, 1, 1 );
+Servir et déguster !", "débutant", 3, 50, 1, 1 );
 
 COMMIT;
