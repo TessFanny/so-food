@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/main.css">
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -16,7 +16,7 @@
     />
     <title>So Food</title>
   </head>
-  <body class="body">
+  <body class="body--sign">
     <header class="header">
       <div class="header-logo">
         <span class="header-logo-light"
@@ -30,24 +30,31 @@
       <nav class="navbar" id="navbar">
         <ul class="navbar-links">
           <li class="navbar-item">
-            <a href="/HTML/index.html" class="navbar-link">Accueil</a>
+            <a href="../HTML/index.html" class="navbar-link">Accueil</a>
           </li>
           <li class="navbar-item">
-            <a href="/HTML/recette.html" class="navbar-link">Recettes</a>
+            <a href="#" class="navbar-link">Recettes</a>
           </li>
           <li class="navbar-item">
-            <a href="/HTML/inscription.html" class="navbar-link">S'inscrire</a>
+            <a href="/public/HTML/inscription.html" class="navbar-link">S'inscrire</a>
           </li>
           <li class="navbar-item">
-            <a href="#" class="navbar-link">Connexion</a>
+            <a href="../HTML/connexion.html" class="navbar-link">Connexion</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main">
         <form class="form">
-            <h4>Formulaire de connexion</h4>
-           
+            <h4>Formulaire d'inscription</h4>
+            <div class="form-row">
+              <label for="lastname" class="form-label">Nom</label>
+              <input type="text" id="lastname" class="form-input">
+            </div>
+            <div class="form-row">
+              <label for="firstname" class="form-label">Prénom</label>
+              <input type="text"  id="firstname" class="form-input">
+            </div>
             <div class="form-row">
               <label for="email" class="form-label">Email</label>
               <input type="email"  id="email" class="form-input">
@@ -57,6 +64,11 @@
               <label for="password" class="form-label">Password</label>
               <input type="text"  id="password" class="form-input">
             </div>
+            <div class="form-row">
+              <label for="confirmation" class="form-label">Password confirmation</label>
+              <input type="text"  id="confirmation" class="form-input">
+            </div>
+          
             <button  type="submit" class="btn btn-block">Submit</button>
           </form>
     </main>
@@ -69,6 +81,6 @@
         <i class="fa-brands fa-square-twitter"></i>
       </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="../app.js"></script>
   </body>
 </html>
